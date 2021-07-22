@@ -1,4 +1,4 @@
-# 🐱‍Install environment
+# 🐱‍Install Environment
 
  - win:
  
@@ -44,7 +44,7 @@
     
      `python onedrive.py download file -i onedrive_file1/to/download onedrive_file2/to/download... -o local_path/to/save`
 
-# ✌supplement
+# 🐱‍Supplement
 
  - /file/to/... : absolute path including file extension, such as: folder/file.txt 
  
