@@ -42,10 +42,12 @@ if __name__ == '__main__':
             if opt.flag1 == 'upload':
                 client.item(drive='me', path=savefile).upload(inputfile)
                 print("uploading file from %s to onedrive/%s " % (inputfile, savefile))
-            if opt.flag1 == 'download':
+            elif opt.flag1 == 'download':
                 os.makedirs(opt.output, exist_ok=True)
                 client.item(drive='me', path=inputfile).download(savefile)
                 print("downloading file from onedrive/%s to %s " % (inputfile, savefile))
+            else:
+                print("input error:file/folder')
     elif opt.flag2 == 'folder':
         for inputfolder in opt.input:
             for root, _, files in os.walk(inputfolder, topdown=False):
@@ -56,6 +58,6 @@ if __name__ == '__main__':
                         client.item(drive='me', path=save_file).upload(input_file)
                         print("uploading folder from %s to onedrive/%s " % (input_file, save_file))
                     else:
-                        print("please input:'file'. Can't download others except file")
+                        print("please input:'upload'")
     else:
         print("input error:upload/download")
