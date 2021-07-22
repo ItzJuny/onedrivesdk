@@ -46,6 +46,6 @@
 
 # ✌supplement
 
- - /file/to/... : absolute path including file extension, such as: floder/file.txt 
+ - /file/to/... : absolute path including file extension, such as: folder/file.txt 
  
- - /path/to/... : absolute path, such as: floder/ 
+ - /path/to/... : absolute path, such as: folder/ 
