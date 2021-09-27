@@ -1,6 +1,7 @@
 #!/bin/bash
 pip install onedrivesdk
 pip3 install git+https://github.com/OneDrive/onedrive-sdk-python.git
+#网络太慢可换成：https://gitee.com/StewLulu/onedrive-sdk-python
 pip3 install --upgrade git+https://github.com/OneDrive/onedrive-sdk-python.git
 echo "For Upload"
 echo "- file: python onedrive.py upload file -i local_file/to/upload -o onedrive_path/to/save"
